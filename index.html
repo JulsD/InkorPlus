@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Инкор-Плюс - запорная арматура, инженерно-конструкторские разработки.">
+		<meta name="keywords" content="запорная арматура, трубопровода, 
+		лазерная резка, системы отопления, водопровода, канализации, трубогибы">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Инкор-Плюс</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="img/favicons/tooth----16.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/tooth----57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicons/tooth----57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/tooth----72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/tooth----114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/tooth----120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/tooth----144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/tooth----152.png">
+		<meta name="application-name" content="Инкор-Плюс">
+		<meta name="msapplication-TileColor" content="#2A2A2A">
+		<style>
+			/* Set the size of the div element that contains the map */
+			#map {
+				height: 400px;  /* The height is 400 pixels */
+				width: 100%;  /* The width is the width of the web page */
+			}
+		</style>
 </head>
 <body>
-    <h1>INKOR PLUS</h1>
-    <p>Pavlograd, Ukraine</p>
-    <p>Git hub pages</p>
+    <h1>ООО "ИНКОР-ПЛЮС"</h1>
+	<p>Павлоград, Украина</p>
+	<h2>О нас:</h2>
+	<p>Занимаемся комплексной поставкой комплектующих для монтажа трубопровода и канализации: задвижки, вентили, краны, клапаны, электроприводы к запорной арматуре, затворы, затворы типа Баттерфляй, металлопластиковые трубы и фитинги, полипропиленовые трубы и фитинги, полиэтиленовые трубы и фитинги, указатели уровня, элеваторы, вантузы аэрационные, запорные устройства, счетчики горячей и холодной воды, пожарные гидранты, гайки ГЦ, муфты, сгоны, контргайки, резьбы, отводы, переходы, фланцы, заглушки, тройники, соединение американка, трубы ЧК, ЧВР, люки канализационные чугунные, резиновые, пластиковые, регуляторы температуры, прокладки биконитовые, паранитовые, сальниковая набивка, крепеж (болты, гайки, шпильки)</p>
+	<p>Также производим трубогибы собственной разработки</p>
+	<p>Предоставляем различные услуги по монтажу и ремонту систем отопления, водопровода, канализации для домов, офисов, предприятий, заменой изношенных металлических трубопроводов на пластиковые или металло пластиковые, лазерной резкой</p>
+	<h2>Контакты:</h2>
+	<p>ул. Интернациональная, 28, Днепропетровская область, Павлоград, Украина</p>
+	<p>+38 (050) 456-78-08, +38 (050) 480-85-34</p>
+	<!--The div element for the map -->
+	<div id="map"></div>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+		// The location of Uluru
+		var uluru = {lat: 48.535885, lng: 35.882711};
+		// The map, centered at Uluru
+		var map = new google.maps.Map(
+			document.getElementById('map'), {zoom: 4, center: uluru});
+		// The marker, positioned at Uluru
+		var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<!--Load the API from the specified URL
+	* The async attribute allows the browser to render the page while the API loads
+	* The key parameter will contain your own API key (which is not needed for this tutorial)
+	* The callback parameter executes the initMap() function
+	-->
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArkFN-mMrUziu5_1V0BFjqnVrOQbriwV4&callback=initMap">
+	</script>
 </body>
 </html>
