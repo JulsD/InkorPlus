@@ -37,27 +37,6 @@
 	<h2>Контакты:</h2>
 	<p>ул. Интернациональная, 28, Днепропетровская область, Павлоград, Украина</p>
 	<p>+38 (050) 456-78-08, +38 (050) 480-85-34</p>
-	<!--The div element for the map -->
-	<div id="map"></div>
-	<script>
-		// Initialize and add the map
-		function initMap() {
-		// The location of Uluru
-		var uluru = {lat: 48.535885, lng: 35.882711};
-		// The map, centered at Uluru
-		var map = new google.maps.Map(
-			document.getElementById('map'), {zoom: 4, center: uluru});
-		// The marker, positioned at Uluru
-		var marker = new google.maps.Marker({position: uluru, map: map});
-		}
-	</script>
-	<!--Load the API from the specified URL
-	* The async attribute allows the browser to render the page while the API loads
-	* The key parameter will contain your own API key (which is not needed for this tutorial)
-	* The callback parameter executes the initMap() function
-	-->
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArkFN-mMrUziu5_1V0BFjqnVrOQbriwV4&callback=initMap">
-	</script>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1138.6437207804368!2d35.87839346948915!3d48.53558799441662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDMyJzA4LjEiTiAzNcKwNTInNDYuMyJF!5e1!3m2!1suk!2spl!4v1540738025249" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </body>
 </html>
