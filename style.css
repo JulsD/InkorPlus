@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?4nd0wz');
@@ -23,19 +25,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  .icon-laser:before {
+
+.icon-logo:before {
+    content: "\e904";
+}
+.icon-laser:before {
     content: "\e900";
-  }
-  .icon-stopcock:before {
+}
+.icon-stopcock:before {
     content: "\e901";
-  }
-  .icon-pipe:before {
+}
+.icon-pipe:before {
     content: "\e902";
-  }
-  .icon-pipes:before {
+}
+.icon-pipes:before {
     content: "\e903";
-  }
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
