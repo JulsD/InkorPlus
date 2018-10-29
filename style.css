@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?4nd0wz');
+    src:  url('fonts/icomoon.eot?4nd0wz#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?4nd0wz') format('truetype'),
+      url('fonts/icomoon.woff?4nd0wz') format('woff'),
+      url('fonts/icomoon.svg?4nd0wz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-laser:before {
+    content: "\e900";
+  }
+  .icon-stopcock:before {
+    content: "\e901";
+  }
+  .icon-pipe:before {
+    content: "\e902";
+  }
+  .icon-pipes:before {
+    content: "\e903";
+  }
+
 nav {
     background-color: #000;
     color: #fff;
@@ -69,6 +108,29 @@ section h2 {
     border-bottom: 2px solid #dfdfff;
 }
 
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.card-list .card {
+    box-sizing: border-box;
+    padding: 10px;
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.card-list .card [class*=icon] {
+    font-size: 50px;
+    color: gray;
+}
+
+.card-list .card p,
+.card-list .card ul {
+    text-align: left;
+}
+
 #contacts {
     padding-left: 0;
     padding-right: 0;
@@ -113,5 +175,13 @@ footer span {
 
     footer span {
         display: inline;
+    }
+
+    .card-list {
+        flex-wrap: nowrap;
+    }
+
+    .card-list .card {
+        flex: 1 1 25%;
     }
 }
