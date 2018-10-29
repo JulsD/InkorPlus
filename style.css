@@ -126,7 +126,7 @@ section h2 {
 .card-list .card {
     box-sizing: border-box;
     padding: 10px;
-    flex: 1 1 50%;
+    flex: 1 1 100%;
     text-align: center;
 }
 
@@ -163,6 +163,12 @@ footer {
 footer span {
     display: block;
     text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+    .card-list .card {
+        flex: 1 1 50%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
