@@ -37,6 +37,10 @@
     content: "\e903";
   }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav {
     background-color: #000;
     color: #fff;
