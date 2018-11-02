@@ -198,6 +198,15 @@ section h2 {
     padding: 0 25px;
 }
 
+.contacts-info-prop {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.contacts-info-value {
+    margin: 0 0 25px;
+}
+
 footer {
     background-color: gray;
     padding: 25px;
