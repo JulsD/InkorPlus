@@ -42,6 +42,10 @@
     content: "\e903";
 }
 
+html * {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -52,14 +56,25 @@ nav {
     font-size: 16px;
     padding: 0 25px;
     text-align: center;
+    z-index: 1;
 }
 
 nav .logo {
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    max-width: 35px;
+    height: auto;
+    display: block;
+    margin-right: 10px;
 }
 
 nav ul {
+    align-self: stretch;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -69,7 +84,8 @@ nav ul {
 
 nav ul a {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 10px;
     text-decoration: none;
     color: inherit;
@@ -128,6 +144,10 @@ section {
     padding: 25px;
 }
 
+section:last-child {
+    padding-bottom: 0;
+}
+
 section header {
     text-align: center;
     padding: 25px auto;
@@ -136,7 +156,9 @@ section header {
 section h2 {
     display: inline-block;
     padding: 5px;
-    border-bottom: 2px solid #dfdfff;
+    border-bottom: 2px solid #b63422;
+    margin-bottom: 25px;
+    margin-top: 0;
 }
 
 .card-list {
@@ -153,8 +175,8 @@ section h2 {
 }
 
 .card-list .card [class*=icon] {
-    font-size: 50px;
-    color: gray;
+    font-size: 60px;
+    color: #b63422;
 }
 
 .card-list .card p,
