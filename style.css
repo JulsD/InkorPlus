@@ -92,7 +92,7 @@ nav ul a {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
     color: inherit;
     height: 100%;
@@ -186,11 +186,16 @@ section h2 {
 .card-list .card [class*=icon] {
     font-size: 60px;
     color: #b63422;
+    margin-bottom: 15px;
 }
 
 .card-list .card p,
 .card-list .card ul {
     text-align: left;
+}
+
+.card-list .card p:last-child {
+    margin-bottom: 0;
 }
 
 #contacts {
@@ -223,7 +228,7 @@ footer span {
     text-align: center;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 450px) {
     .card-list .card {
         flex: 1 1 50%;
     }
@@ -232,13 +237,6 @@ footer span {
 @media only screen and (min-width: 768px) {
     .page-wrapper {
         padding: 0 50px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    nav {
-        position: sticky;
-        top: 0;
     }
 
     nav .page-wrapper {
@@ -258,6 +256,13 @@ footer span {
     footer span {
         display: inline;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
 
     .card-list {
         flex-wrap: nowrap;
@@ -265,5 +270,7 @@ footer span {
 
     .card-list .card {
         flex: 1 1 25%;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
