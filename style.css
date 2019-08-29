@@ -109,6 +109,8 @@ nav ul a {
 
 nav ul a:hover {
     border-bottom-color: #b63422;
+    background-color: #38100a;
+    transition: all linear 0.2s;
 }
 
 #intro {
